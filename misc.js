@@ -7,6 +7,6 @@ $("[role=link]").click(function(){
  use document.location = href;
  instead of window.open(href) */
 
-  $('#button-9111').click(function(e) {
+  $('#button-123').click(function(e) {
   alert("You activated the native button with a click action!");
 });
