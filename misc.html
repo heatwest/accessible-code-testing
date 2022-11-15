@@ -31,5 +31,28 @@
 	<p><span role="link" tabindex="0" data-href="https://google.com">Fully accessible ARIA link</span></p>
 
 	<p><button id="button-123">Button 123</button></p>
+
+	<h2>Deque AJAX focus example</h2>
+	<p><button id="someButton">Load the AJAX content</button></p>
+	<div id="decContainer"></div>
+	<script>   
+	$("#someButton").click(function(){
+	  $.ajax({
+		url: "https://webaim.org/intro/", 
+		type:'GET',
+		cache: false,
+		success: function(result){
+		  $("#someContainer").show().html(result);
+		  var someHeading = $("#someContainer h2:first");
+		  /* set tabindex="-1" so the heading can receive keyboard focus */
+		  someHeading.attr('tabindex','-1');
+		  setTimeout(function(){ 
+			/* move focus to the heading after a delay of 1 second */
+			$("#someContainer h2:first").focus(); 
+		  }, 1000);
+		}
+	  });
+	}); 
+	</script>
 </body>
 </html>
