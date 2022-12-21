@@ -1,1 +1,13 @@
 /* add styles for misc file here */
+
+.sr-only, .visuallyHidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    padding: 0 !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+  }
