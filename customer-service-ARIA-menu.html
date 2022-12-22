@@ -4,114 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Customer Service ARIA menu testing</title>
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"
-    ></script>
-    <script>
-      /* Remove ARIA menu roles and properties from navigation */
-      /* remove role from main nav <ul> */
-      document
-        .getElementsByClassName("comm-navigation__list")[0]
-        .removeAttribute("role");
-
-      /* remove roles from nav <li>s */
-      document
-        .getElementsByClassName("slds-is-relative slds-list__item")[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName(
-        "slds-is-relative slds-list__item"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-
-      /* remove roles from nav <button>s */
-      document
-        .getElementsByClassName(
-          "slds-container_fluid slds-button slds-button--reset"
-        )[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName(
-        "slds-container_fluid slds-button slds-button--reset"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-
-      /* remove aria-haspopup from <button>s */
-      document
-        .getElementsByClassName(
-          "slds-container_fluid slds-button slds-button--reset"
-        )[0]
-        .removeAttribute("aria-haspopup");
-
-      var cls = document.getElementsByClassName(
-        "slds-container_fluid slds-button slds-button--reset"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("aria-haspopup");
-      }
-
-      /* remove roles from submenu <ul>s */
-      document
-        .getElementsByClassName(
-          "slds-list_vertical slds-is-nested slds-hide"
-        )[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName(
-        "slds-list_vertical slds-is-nested slds-hide"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-
-      /* remove roles from submenu <li>s */
-      document
-        .getElementsByClassName("slds-list__item")[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName("slds-list__item");
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-
-      /* remove roles from first-level <a>s */
-      document
-        .getElementsByClassName(
-          "slds-container_fluid slds-truncate slds-is-active"
-        )[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName(
-        "slds-container_fluid slds-truncate slds-is-active"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-
-      /* remove roles from sub-menu <a>s */
-      document
-        .getElementsByClassName("slds-container_fluid slds-truncate")[0]
-        .removeAttribute("role");
-
-      var cls = document.getElementsByClassName(
-        "slds-container_fluid slds-truncate"
-      );
-
-      for (var i = 0; i < cls.length; i++) {
-        cls[i].removeAttribute("role");
-      }
-    </script>
 
     <style type="text/css">
       .forceCommunityGlobalNavigation {
@@ -336,6 +228,7 @@
     
     </style>
   </head>
+
   <body>
     <!-- CS navigation -->
     <h1>Customer Service ARIA menu testing</h1>
@@ -687,5 +580,115 @@
         </div>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"
+    ></script>
+    <script>
+      /* Remove ARIA menu roles and properties from navigation. Must appear after navigation in the DOM or have a 1-2 second delay set */
+      /* remove role from main nav <ul> */
+      document
+        .getElementsByClassName("comm-navigation__list")[0]
+        .removeAttribute("role");
+
+      /* remove roles from nav <li>s */
+      document
+        .getElementsByClassName("slds-is-relative slds-list__item")[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName(
+        "slds-is-relative slds-list__item"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+
+      /* remove roles from nav <button>s */
+      document
+        .getElementsByClassName(
+          "slds-container_fluid slds-button slds-button--reset"
+        )[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName(
+        "slds-container_fluid slds-button slds-button--reset"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+
+      /* remove aria-haspopup from <button>s */
+      document
+        .getElementsByClassName(
+          "slds-container_fluid slds-button slds-button--reset"
+        )[0]
+        .removeAttribute("aria-haspopup");
+
+      var cls = document.getElementsByClassName(
+        "slds-container_fluid slds-button slds-button--reset"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("aria-haspopup");
+      }
+
+      /* remove roles from submenu <ul>s */
+      document
+        .getElementsByClassName(
+          "slds-list_vertical slds-is-nested slds-hide"
+        )[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName(
+        "slds-list_vertical slds-is-nested slds-hide"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+
+      /* remove roles from submenu <li>s */
+      document
+        .getElementsByClassName("slds-list__item")[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName("slds-list__item");
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+
+      /* remove roles from first-level <a>s */
+      document
+        .getElementsByClassName(
+          "slds-container_fluid slds-truncate slds-is-active"
+        )[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName(
+        "slds-container_fluid slds-truncate slds-is-active"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+
+      /* remove roles from sub-menu <a>s */
+      document
+        .getElementsByClassName("slds-container_fluid slds-truncate")[0]
+        .removeAttribute("role");
+
+      var cls = document.getElementsByClassName(
+        "slds-container_fluid slds-truncate"
+      );
+
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("role");
+      }
+    </script>
+
   </body>
 </html>
