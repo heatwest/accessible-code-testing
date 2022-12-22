@@ -688,6 +688,15 @@
       for (var i = 0; i < cls.length; i++) {
         cls[i].removeAttribute("role");
       }
+
+      /* remove redundant role on main <nav> */
+      document
+      .querySelectorAll("nav.slds-has-flexi-truncate")[0].removeAttribute("role");
+        
+      /* add unique name to main <nav> */
+        document
+      .querySelectorAll("nav.slds-has-flexi-truncate")[0].setAttribute("aria-label", "Main");
+
     </script>
 
   </body>
