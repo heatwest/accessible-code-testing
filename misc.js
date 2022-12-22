@@ -29,3 +29,6 @@ $("#someButton").click(function(){
   }
   });
 }); 
+
+/* ARIA menu role removal testing */
+// document.getElementsByTagName("ul")[0].removeAttribute("role");

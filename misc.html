@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Misc testing</title>
-    <link rel="stylesheet" href="misc.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script src="misc.js"></script>
-</head>
-<body>
-	<h1>Misc testing:</h1>
-	<fieldset>
-		<legend>Was this article helpful?</legend>
-		<input type="button" value="Yes">
-		<input type="button" value="No">
-	</fieldset>
-	<br>
-	<fieldset>
-		<legend>Was this article helpful?</legend>
-		<button>Yes</button>
-		<button>No</button>
-	</fieldset>
-	<br>
-	<div role="group" aria-labelledby="feedback">
-		<div id="feedback">Was this article helpful?</div>
-		<button>Yes</button>
-		<button>No</button>
-	</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Misc testing</title>
+    <link rel="stylesheet" href="misc.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"
+    ></script>
+    <script src="misc.js"></script>
+  </head>
+  <body>
+    <h1>Misc testing:</h1>
+    <fieldset>
+      <legend>Was this article helpful?</legend>
+      <input type="button" value="Yes" />
+      <input type="button" value="No" />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Was this article helpful?</legend>
+      <button>Yes</button>
+      <button>No</button>
+    </fieldset>
+    <br />
+    <div role="group" aria-labelledby="feedback">
+      <div id="feedback">Was this article helpful?</div>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
 
-	<p><span role="link" tabindex="0" data-href="https://google.com">Fully accessible ARIA link</span></p>
+    <p>
+      <span role="link" tabindex="0" data-href="https://google.com"
+        >Fully accessible ARIA link</span
+      >
+    </p>
 
-	<p><button id="button-123">Button 123</button></p>
-	<hr />
-	<h2>Deque AJAX focus example</h2>
-	<p><button id="someButton">Load the AJAX content (not working)</button></p>
-	<div id="someContainer" style="display:block;"></div>
+    <p><button id="button-123">Button 123</button></p>
+    <hr />
+    <h2>Deque AJAX focus example</h2>
+    <p><button id="someButton">Load the AJAX content (not working)</button></p>
+    <div id="someContainer" style="display: block"></div>
 
-	<div c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown="" class="bg-grey" data-has-leaf="true">
-		<div c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown="" class="mobile-dropdown-header">
-		  <button c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown="" class="xeg-h6 back-hamburger" aria-label="Back to main menu">
-			<i c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown="" class="back-chevron-left" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i>
-			<span c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown="" class="back-font-size">Back</span>
-		  </button>
-		</div>
-	  </div>
-	<br>
-	<label for="routing">Routing Number</label>
-	<input type="text" id="routing">
-	<button id="helpRouting" aria-label="Where do I find this? Routing number">Where do I find this?</button>
-	<br>
-	<label for="account">Account Number</label>
-	<input type="text" id="account">
-	<button id="helpAccount" aria-label="Where do I find this? Account number">Where do I find this?</button>
-	<br>
-	<br>
-	<select aria-describedby="SR-warning"> … </select>
-	<span id="SR-warning" class="visuallyHidden">Activating this element will cause content on the page to be updated.</span>
-	<br>
-	<br>
-	<select aria-describedby="SR-warning"> … </select>
-	<span id="SR-warning" class="visuallyHidden" aria-hidden="true">Activating this element will cause content on the page to be updated</span>
-</body>
+    <div
+      c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown=""
+      class="bg-grey"
+      data-has-leaf="true"
+    >
+      <div
+        c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown=""
+        class="mobile-dropdown-header"
+      >
+        <button
+          c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown=""
+          class="xeg-h6 back-hamburger"
+          aria-label="Back to main menu"
+        >
+          <i
+            c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown=""
+            class="back-chevron-left"
+            aria-hidden="true"
+            >&nbsp;&nbsp;&nbsp;</i
+          >
+          <span
+            c-xegsiteheadermobilenavdropdown_xegsiteheadermobilenavdropdown=""
+            class="back-font-size"
+            >Back</span
+          >
+        </button>
+      </div>
+    </div>
+    <br />
+    <label for="routing">Routing Number</label>
+    <input type="text" id="routing" />
+    <button id="helpRouting" aria-label="Where do I find this? Routing number">
+      Where do I find this?
+    </button>
+    <br />
+    <label for="account">Account Number</label>
+    <input type="text" id="account" />
+    <button id="helpAccount" aria-label="Where do I find this? Account number">
+      Where do I find this?
+    </button>
+    <br />
+
+  </body>
 </html>
