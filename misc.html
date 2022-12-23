@@ -72,18 +72,34 @@
       </div>
     </div>
     <br />
-    <label for="routing">Routing Number</label>
-    <input type="text" id="routing" />
-    <button id="helpRouting" aria-label="Where do I find this? Routing number">
-      Where do I find this?
-    </button>
     <br />
-    <label for="account">Account Number</label>
-    <input type="text" id="account" />
-    <button id="helpAccount" aria-label="Where do I find this? Account number">
-      Where do I find this?
-    </button>
-    <br />
+    <div>
+      <button id="colors" role="combobox" aria-expanded="true" aria-controls="colorsListbox">Select a color:</button>
+      <div id="colorsListbox" role="listbox" >
+        <ul role="presentation" style="list-style:none;">
+          <li role="presentation"><span aria-selected="true" role="option">option 1</span></li>
+          <li role="presentation"><span aria-selected="false" role="option">option 2</span></li>
+          <li role="presentation"><span aria-selected="false" role="option">option 3</span></li>
+        </ul>
+      </div>
+  </div>
+  
+    <div>
+      <button id="colors2" aria-expanded="true" aria-controls="colorsListbox2">Select a color:</button>
+      <div id="colorsListbox2" aria-label="Color options" role="dialog">
+        <div role="group" aria-label="Select one or more"></div>
+          <ul style="list-style:none;">
+            <li><input type="checkbox" value="red" id="option4" checked><label for="option4">Red</label></li>
+            <li><input type="checkbox" value="green" id="option5"><label for="option5">Green</label></li>
+            <li><input type="checkbox" value="blue" id="option6"><label for="option6">Blue</label></li>
+          </ul>
+        </div>
+        <div>
+          <button>Apply</button>
+          <button>Clear filters</button>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
