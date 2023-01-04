@@ -1,0 +1,143 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+div {
+    margin: 20px 10px;
+    padding: 20px 20px;
+    }
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 3px;
+    border: 1px solid;
+    box-shadow: 1px 1px 3px 0px #999999;
+}
+
+button#primary,
+button#primary2 {
+    background-color: #da1020;
+    color: #fff;
+    border: 2px solid #da1020;
+}
+
+#grayBackground {
+    background-color: #F6F8FB;
+}
+
+button#secondary,
+button#secondary2 {
+    background-color: #fff;
+    color: #57595D;
+    border-color: #57595D;
+}
+
+button#secondaryGray,
+button#secondaryGray2 {
+    background-color: #dcdcdc;
+    color: #000;
+    border-color: #dcdcdc;   
+}
+
+a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 1px solid;
+    text-decoration: underline;
+    line-height: 40px;
+}
+
+/*
+a::after {
+    content: "  >";
+}
+*/
+
+a#primaryLink,
+a#primaryLink2 {
+    background-color: #da1020;
+    color: #fff;
+    border: 2px solid #da1020;
+}
+
+a#secondaryLink,
+a#secondaryLink2 {
+    background-color: #fff;
+    color: #00628a;
+    border-color: #00628a;
+}
+
+#redBackground {
+    background-color: #da1020;
+}
+
+a#contactUs,
+a#contactUs2 {
+    background-color: #fff;
+    color: #57595D;
+    border: 2px solid #fff;
+}
+
+/* hover and focus states */
+
+a:hover, 
+a:focus-visible {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus {
+    outline: 2px solid #000;
+    outline-offset: .25rem;
+}
+button#primary:hover,
+button#secondary:hover,
+button#secondaryGray:hover,
+a#primaryLink:hover,
+a#secondaryLink:hover,
+a#contactUs:hover
+ {
+    outline: 2px solid #000;
+    outline-offset: .25rem;
+}
+
+a#primaryLink2:hover,
+a#primaryLink2:focus-visible,
+button#primary2:hover,
+button#primary2:focus-visible {
+    background-color: #fff;
+    color: #da1020;
+    border-color: #da1020;
+}
+
+button#secondary2:hover,
+button#secondary2:focus-visible,
+button#secondaryGray2:hover,
+button#secondaryGray2:focus-visible {
+    background-color: #57595D;
+    color: #fff;
+    border-color: #57595D;
+}
+
+a#secondaryLink2:hover,
+a#secondaryLink2:focus-visible {
+    background-color: #00628a;
+    color: #fff;
+    border-color: #00628a;
+}
+
+a#contactUs2:hover {
+    border: 2px solid #57595D; 
+}
