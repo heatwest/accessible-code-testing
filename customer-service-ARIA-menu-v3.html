@@ -3,129 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Customer Service ARIA menu testing v2</title>
+    <title>Customer Service ARIA menu testing v3</title>
 
     <script
         type="text/javascript"
-        src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"
-        >
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js">
     </script>
-    <script>
-        /* Remove ARIA menu roles and properties from navigation with a delay to allow navigation to load first */
-        var delayScript = 1000;
-
-        setTimeout (function(){
-            /* remove role from main nav <ul> */
-            document
-                .getElementsByClassName("comm-navigation__list")[0]
-                .removeAttribute("role");
-
-            /* remove roles from nav <li>s */
-            document
-                .getElementsByClassName("slds-is-relative slds-list__item")[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName(
-                "slds-is-relative slds-list__item"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove roles from nav <button>s */
-            document
-                .getElementsByClassName(
-                "slds-container_fluid slds-button slds-button--reset"
-                )[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName(
-                "slds-container_fluid slds-button slds-button--reset"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove aria-haspopup from <button>s */
-            document
-                .getElementsByClassName(
-                "slds-container_fluid slds-button slds-button--reset"
-                )[0]
-                .removeAttribute("aria-haspopup");
-
-            var cls = document.getElementsByClassName(
-                "slds-container_fluid slds-button slds-button--reset"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("aria-haspopup");
-            }
-
-            /* remove roles from submenu <ul>s */
-            document
-                .getElementsByClassName(
-                "slds-list_vertical slds-is-nested slds-hide"
-                )[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName(
-                "slds-list_vertical slds-is-nested slds-hide"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove roles from submenu <li>s */
-            document
-                .getElementsByClassName("slds-list__item")[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName("slds-list__item");
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove roles from first-level <a>s */
-            document
-                .getElementsByClassName(
-                "slds-container_fluid slds-truncate slds-is-active"
-                )[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName(
-                "slds-container_fluid slds-truncate slds-is-active"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove roles from sub-menu <a>s */
-            document
-                .getElementsByClassName("slds-container_fluid slds-truncate")[0]
-                .removeAttribute("role");
-
-            var cls = document.getElementsByClassName(
-                "slds-container_fluid slds-truncate"
-            );
-
-            for (var i = 0; i < cls.length; i++) {
-                cls[i].removeAttribute("role");
-            }
-
-            /* remove redundant role on main <nav> */
-            document
-            .querySelectorAll("nav.slds-has-flexi-truncate")[0].removeAttribute("role");
-                
-            /* add unique name to main <nav> */
-                document
-            .querySelectorAll("nav.slds-has-flexi-truncate")[0].setAttribute("aria-label", "Main");
-        }, delayScript);
-    </script>
+    <script type="text/javascript" src="customer-service-ARIA-menu-v3.js">
 
     <style type="text/css">
       .forceCommunityGlobalNavigation {
@@ -353,7 +237,7 @@
 
   <body>
     <!-- CS navigation -->
-    <h1>Customer Service ARIA menu testing with delay and script inline in page head</h1>
+    <h1>Customer Service ARIA menu testing with delay and script included in page head</h1>
     <div tabindex="-1" class="cNavBarCon" data-aura-rendered-by="301:0">
       <div
         data-region-name="navBar"
