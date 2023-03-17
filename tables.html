@@ -4,9 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tables</title>
+    <style>
+        table {
+            border: solid 1px #000000;
+        }
+    </style>
    </head>
    <body>
     <main>
+        <h1>Tables</h1>
+        <h2>Table with radios</h2>
+        <p>This one requires use of arrow keys to navigate between radios, which might be confusing for some keyboard users since this isn't a standard radio config.</p>
         <table>
             <thead>
                 <tr>
@@ -18,12 +26,34 @@
             <tbody>
                 <tr>
                     <td><input type="radio" aria-labelledby="col1 name1" name="selectAcct"></td>
-                    <td id="name1">Heather</td>
+                    <td id="name1">Apple</td>
                     <td>123 main st</td>
                 </tr>
                 <tr>
                     <td><input type="radio" aria-labelledby="col1 name2" name="selectAcct"></td>
-                    <td id="name2">Mike</td>
+                    <td id="name2">Banana</td>
+                    <td>987 some ave</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Table with buttons</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" id="col1">Select</th>
+                    <th scope="col" id="col2">Name</th>
+                    <th scope="col" id="col3">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button aria-label="Select Apple" aria-pressed="true">icon</button></td>
+                    <td>Apple</td>
+                    <td>123 main st</td>
+                </tr>
+                <tr>
+                    <td><button aria-label="Select Banana" aria-pressed="false">icon</button></td>
+                    <td>Banana</td>
                     <td>987 some ave</td>
                 </tr>
             </tbody>
