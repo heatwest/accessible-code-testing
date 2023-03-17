@@ -8,13 +8,46 @@
         table {
             border: solid 1px #000000;
         }
+        .sr-only {
+            clip: rect(0 0 0 0); 
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap; 
+            width: 1px;
+        }
     </style>
    </head>
    <body>
     <main>
         <h1>Tables</h1>
-        <h2>Table with radios</h2>
-        <p>This one requires use of arrow keys to navigate between radios, which might be confusing for some keyboard users since this isn't a standard radio config.</p>
+        <h2>Table with checkboxes</h2>
+        <p>This is how Salesforce LWC handles selectable rows. However, because we'd need to restrict to only one checkbox selection, this would go against the checkbox expectations.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" id="col1">Select</th>
+                    <th scope="col" id="col2">Name</th>
+                    <th scope="col" id="col3">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="selectAcct" id="acct123"><label for="acct123" class="sr-only">Select Apple</label></td>
+                    <td id="name1">Apple</td>
+                    <td>123 main st</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="selectAcct" id="acct456"><label for="acct456" class="sr-only">Select Banana</label></td>
+                    <td id="name2">Banana</td>
+                    <td>987 some ave</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Table with radios - aria-labelledby</h2>
+        <p>This option enforces only one selection and matches the design. It requires use of arrow keys to navigate between radios, which might be confusing for sighted keyboard users since this isn't a standard radio config.</p>
         <table>
             <thead>
                 <tr>
@@ -36,6 +69,30 @@
                 </tr>
             </tbody>
         </table>
+ 
+        <h2>Table with radios - hidden labels</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Select</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="radio" name="selectAcct2" id="acct1"></td><label for="acct1" class="sr-only">Select Apple</label></td>
+                    <td>Apple</td>
+                    <td>123 main st</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="selectAcct2" id="acct2"></td><label for="acct2" class="sr-only">Select Banana</label></td>
+                    <td>Banana</td>
+                    <td>987 some ave</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h2>Table with buttons</h2>
         <table>
             <thead>
