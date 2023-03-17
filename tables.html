@@ -46,31 +46,8 @@
             </tbody>
         </table>
 
-        <h2>Table with radios - aria-labelledby</h2>
-        <p>This option enforces only one selection and matches the design. It requires use of arrow keys to navigate between radios, which might be confusing for sighted keyboard users since this isn't a standard radio config.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col" id="col1">Select</th>
-                    <th scope="col" id="col2">Name</th>
-                    <th scope="col" id="col3">Address</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="radio" aria-labelledby="col1 name1" name="selectAcct"></td>
-                    <td id="name1">Apple</td>
-                    <td>123 main st</td>
-                </tr>
-                <tr>
-                    <td><input type="radio" aria-labelledby="col1 name2" name="selectAcct"></td>
-                    <td id="name2">Banana</td>
-                    <td>987 some ave</td>
-                </tr>
-            </tbody>
-        </table>
- 
         <h2>Table with radios - hidden labels</h2>
+        <p>This is how Salesforce LDS handles single select rows. It requires use of arrow keys to navigate between radios, which might be confusing for sighted keyboard users since this isn't a standard radio config.</p>
         <table>
             <thead>
                 <tr>
@@ -88,6 +65,30 @@
                 <tr>
                     <td><input type="radio" name="selectAcct2" id="acct2"></td><label for="acct2" class="sr-only">Select Banana</label></td>
                     <td>Banana</td>
+                    <td>987 some ave</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Table with radios - aria-labelledby</h2>
+        <p>This option is the same as above but uses aria-labelledby to name the radios.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" id="col1">Select</th>
+                    <th scope="col" id="col2">Name</th>
+                    <th scope="col" id="col3">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="radio" aria-labelledby="col1 name1" name="selectAcct"></td>
+                    <td id="name1">Apple</td>
+                    <td>123 main st</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" aria-labelledby="col1 name2" name="selectAcct"></td>
+                    <td id="name2">Banana</td>
                     <td>987 some ave</td>
                 </tr>
             </tbody>
