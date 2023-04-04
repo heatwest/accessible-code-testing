@@ -54,16 +54,16 @@
         #apple > a > img, #google > a > img {
             width: 300px;
         }
-        ul.sociaLinks {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-            text-align: center;
+        .sociaLinks {
+            display: flex;
         }
-        ul.socialLinks li {
-            float: left;
+        .socialLinks > div {
+            flex: 1;
         }
-        .socialLinkWrapper, .subFooter {
+        .socialLinks > div > a > img {
+            width: 75px;
+        }
+        #socialLinkWrapper, .subFooter {
             background-color:#ffffff;
             color: #000000;
         }
@@ -111,28 +111,28 @@
                 </div>
             </div>
             <div id="socialLinkWrapper">
-                <ul class="socialLinks">
-                    <li>
+                <div class="socialLinks" role="list">
+                    <div role="listitem">
                         <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title="">
                             <img alt="Facebook" data-assetid="633515" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/7380eeea-52c2-47a9-b740-18559794d66e.png">
                         </a>
-                    </li>
-                    <li>
+                    </div>
+                    <div role="listitem">
                         <a alias="" conversion="false" data-linkto="https://" href="https://twitter.com/xcelenergy" title="">
                             <img alt="Twitter" data-assetid="633512" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/6c7256b0-1cf5-4f4c-816f-ccf1b65cd5b9.png">
                         </a>
-                    </li> 
-                    <li>
+                    </div> 
+                    <div role="listitem">
                         <a alias="" conversion="false" data-linkto="https://" href="https://www.instagram.com/xcelenergy/" title="">
                             <img alt="Instagram" data-assetid="633514" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/e8798a45-9336-4ac8-8e1f-9c2648b39c00.png">
                         </a>
-                    </li>
-                    <li>
+                        </div>
+                    <div role="listitem">
                         <a alias="" conversion="false" data-linkto="https://" href="https://www.youtube.com/@XcelEnergyInYourCommunity" title="">
                             <img alt="Youtube" data-assetid="633513" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f5cc5cf1-7c69-407b-a960-9ac2dbba2bcf.png"> 
                         </a>
-                    </li>
-                </ul>         
+                    </div>
+                </div>         
             </div>
             <div class="subFooter">
                 <p>You are receiving this email because you opted to receive information from Xcel Energy.</p>
