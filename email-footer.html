@@ -29,9 +29,11 @@
         .footer-links:hover {
             text-decoration: underline;
         }
-        .footer-links:focus-visible {
+        .footer-links:focus-visible,
+        #apple > a:focus-visible,
+        #google > a:focus-visible {
             text-decoration: underline;
-            outline: 2px solid #ffffff;
+            outline:Highlight auto 2px;outline:-webkit-focus-ring-color auto 5px;
         }
         h2 {
             font-size: 16px;
@@ -43,20 +45,20 @@
         }
         #apple {
             flex: 1;
+            text-align: right;
         }
         #google {
             flex: 1;
+            text-align: left;
         }
         #apple > a > img, #google > a > img {
-            width: 200px;
+            width: 300px;
         }
-        /*.appWrapper img {
-            height: auto;
-            width: 100%
-        }*/
-        .socialLinkWrapper {
-            margin-right: 0;
-            margin-left: 0;
+        ul.sociaLinks {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
         }
         ul.socialLinks li {
             float: left;
@@ -108,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="socialLinkWrapper">
+            <div id="socialLinkWrapper">
                 <ul class="socialLinks">
                     <li>
                         <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title="">
