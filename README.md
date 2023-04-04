@@ -19,3 +19,5 @@ Repository for random accessibility code testing and examples
 - [buttons2](https://htmlpreview.github.io/?https://github.com/heatwest/accessible-code-testing/blob/main/buttons2.html)
 
 - [tables](https://htmlpreview.github.io/?https://github.com/heatwest/accessible-code-testing/blob/main/tables.html)
+
+- [email-footer](https://htmlpreview.github.io/?https://github.com/heatwest/accessible-code-testing/blob/main/email-footer.html)
