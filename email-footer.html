@@ -32,18 +32,22 @@ h2 {
     margin-bottom: 0;
     margin-top: 20px;
 }
+.appImgWrapper {
+    display: flex;
+}
 #apple {
-    width: 50%;
-    float: left;
+    flex: 1;
 }
 #google {
-    width: 50%;
-    float:right;
+    flex: 1;
 }
-.appWrapper img {
+#apple > a > img, #google > a > img {
+    width: 200px;
+}
+/*.appWrapper img {
     height: auto;
     width: 100%
-}
+}*/
 .socialLinkWrapper {
     margin-right: 0;
     margin-left: 0;
@@ -72,27 +76,29 @@ ul.socialLinks li {
         <div class="websiteLinks">
             <ul>
                 <li>
-                <a class="footer-links" href="https://my.xcelenergy.com/MyAccount/XE_Login?template=XE_MA_Template" title="" alias="" conversion="false" data-linkto="https://">MY ACCOUNT</a>
+                    <a class="footer-links" href="https://my.xcelenergy.com/MyAccount/XE_Login?template=XE_MA_Template" title="" alias="" conversion="false" data-linkto="https://">MY ACCOUNT</a>
                 </li>
                 <li>
-                <a class="footer-links" href="https://my.xcelenergy.com/s/residential/home-rebates" title="" alias="" conversion="false" data-linkto="https://">PROGRAMS & REBATES</a>
+                    <a class="footer-links" href="https://my.xcelenergy.com/s/residential/home-rebates" title="" alias="" conversion="false" data-linkto="https://">PROGRAMS & REBATES</a>
                 </li>
                 <li>
-                <a class="footer-links" href="https://my.xcelenergy.com/s/billing-payment/energy-assistance" title="" alias="" conversion="false" data-linkto="https://">ENERGY ASSISTANCE</a>
+                    <a class="footer-links" href="https://my.xcelenergy.com/s/billing-payment/energy-assistance" title="" alias="" conversion="false" data-linkto="https://">ENERGY ASSISTANCE</a>
                 </li>
             </ul>
         </div>
         <div class="appWrapper">
             <H2>DOWNLOAD THE APP</H2>
-            <div id="apple">
-                <a href="https://apps.apple.com/us/app/my-xcel-energy/id1551712841" title="" alias="" conversion="false" data-linkto="https://">
-                    <img data-assetid="633488" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f46ad397-a25f-44ab-bbd2-0b43a7b265de.png" alt="Download the app on App Store">
-                </a>
-            </div>
+            <div id="appImgWrapper">
+                <div id="apple">
+                    <a href="https://apps.apple.com/us/app/my-xcel-energy/id1551712841" title="" alias="" conversion="false" data-linkto="https://">
+                        <img data-assetid="633488" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f46ad397-a25f-44ab-bbd2-0b43a7b265de.png" alt="Download the app on App Store">
+                    </a>
+                </div>
                 <div id="google">
-                <a href="https://play.google.com/store/apps/details?id=com.mysalesforce.mycommunity.C00D1U0000011ttVUAQ.A0OT2R000000GoeAWAS" title="" alias="" conversion="false" data-linkto="https://">
-                    <img data-assetid="633489" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/4c594f12-315f-4622-8e19-8d92aface3cf.png" alt="Download the app on Google Play" >
-                </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mysalesforce.mycommunity.C00D1U0000011ttVUAQ.A0OT2R000000GoeAWAS" title="" alias="" conversion="false" data-linkto="https://">
+                        <img data-assetid="633489" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/4c594f12-315f-4622-8e19-8d92aface3cf.png" alt="Download the app on Google Play" >
+                    </a>
+                </div>
             </div>
         </div>
         <div class="socialLinkWrapper">
