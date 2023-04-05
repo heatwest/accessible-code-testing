@@ -54,20 +54,21 @@
         #apple > a > img, #google > a > img {
             width: 300px;
         }
-        .sociaLinks {
+        #socialLinks {
             display: flex;
+            justify-content: center;
         }
-        .socialLinks > div {
-            flex: 1;
+        #socialLinks > div {
+            margin: 5px;
         }
-        .socialLinks > div > a > img {
+        #socialLinks > div > a > img {
             width: 75px;
         }
-        #socialLinkWrapper, .subFooter {
+        #socialLinkWrapper, #subFooter {
             background-color:#ffffff;
             color: #000000;
         }
-        .subFooter > p {
+        .finePrint > p {
             font-size: 12px;
             clear: both;
         }
@@ -82,7 +83,7 @@
             [email body content]
         </main>
         <footer>
-            <div class="websiteLinks">
+            <div id="websiteLinks">
                 <ul>
                     <li>
                         <a class="footer-links" href="https://my.xcelenergy.com/MyAccount/XE_Login?template=XE_MA_Template" title="" alias="" conversion="false" data-linkto="https://">MY ACCOUNT</a>
@@ -95,7 +96,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="appWrapper">
+            <div id="appWrapper">
                 <H2>DOWNLOAD THE APP</H2>
                 <div id="appImgWrapper">
                     <div id="apple">
@@ -110,35 +111,37 @@
                     </div>
                 </div>
             </div>
-            <div id="socialLinkWrapper">
-                <div class="socialLinks" role="list">
-                    <div role="listitem">
-                        <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title="">
-                            <img alt="Facebook" data-assetid="633515" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/7380eeea-52c2-47a9-b740-18559794d66e.png">
-                        </a>
-                    </div>
-                    <div role="listitem">
-                        <a alias="" conversion="false" data-linkto="https://" href="https://twitter.com/xcelenergy" title="">
-                            <img alt="Twitter" data-assetid="633512" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/6c7256b0-1cf5-4f4c-816f-ccf1b65cd5b9.png">
-                        </a>
-                    </div> 
-                    <div role="listitem">
-                        <a alias="" conversion="false" data-linkto="https://" href="https://www.instagram.com/xcelenergy/" title="">
-                            <img alt="Instagram" data-assetid="633514" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/e8798a45-9336-4ac8-8e1f-9c2648b39c00.png">
-                        </a>
+            <div id="subFooter">
+                <div id="socialLinkWrapper">
+                    <div id="socialLinks" role="list">
+                        <div role="listitem">
+                            <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title="">
+                                <img alt="Facebook" data-assetid="633515" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/7380eeea-52c2-47a9-b740-18559794d66e.png">
+                            </a>
                         </div>
-                    <div role="listitem">
-                        <a alias="" conversion="false" data-linkto="https://" href="https://www.youtube.com/@XcelEnergyInYourCommunity" title="">
-                            <img alt="Youtube" data-assetid="633513" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f5cc5cf1-7c69-407b-a960-9ac2dbba2bcf.png"> 
-                        </a>
-                    </div>
-                </div>         
-            </div>
-            <div class="subFooter">
-                <p>You are receiving this email because you opted to receive information from Xcel Energy.</p>
-                <p>Please add <a href="mailto:email@XcelEnergy-EmailNews.com">email@XcelEnergy-EmailNews.com</a> to your safe sender list, contacts or address book.</p>
-                <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
-                <p>App Store and Apple logo are registered trademarks of Apple Inc.</p>
+                        <div role="listitem">
+                            <a alias="" conversion="false" data-linkto="https://" href="https://twitter.com/xcelenergy" title="">
+                                <img alt="Twitter" data-assetid="633512" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/6c7256b0-1cf5-4f4c-816f-ccf1b65cd5b9.png">
+                            </a>
+                        </div> 
+                        <div role="listitem">
+                            <a alias="" conversion="false" data-linkto="https://" href="https://www.instagram.com/xcelenergy/" title="">
+                                <img alt="Instagram" data-assetid="633514" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/e8798a45-9336-4ac8-8e1f-9c2648b39c00.png">
+                            </a>
+                            </div>
+                        <div role="listitem">
+                            <a alias="" conversion="false" data-linkto="https://" href="https://www.youtube.com/@XcelEnergyInYourCommunity" title="">
+                                <img alt="Youtube" data-assetid="633513" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f5cc5cf1-7c69-407b-a960-9ac2dbba2bcf.png"> 
+                            </a>
+                        </div>
+                    </div>         
+                </div>
+                <div class="finePrint">
+                    <p>You are receiving this email because you opted to receive information from Xcel Energy.</p>
+                    <p>Please add <a href="mailto:email@XcelEnergy-EmailNews.com">email@XcelEnergy-EmailNews.com</a> to your safe sender list, contacts or address book.</p>
+                    <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+                    <p>App Store and Apple logo are registered trademarks of Apple Inc.</p>
+                </div>
             </div>
         </footer>
     </body>
