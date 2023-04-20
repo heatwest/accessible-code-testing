@@ -38,11 +38,6 @@
         h2 {
             font-size: 20px;
         }
-        @media only screen and (min-width:360px) {
-            #appWrapper {
-                display:none;
-            }
-        }
         #appImgWrapper {
             display: flex;
         }
@@ -68,18 +63,20 @@
             text-align: center;
             list-style: none;
             padding-left: 0;
-            padding-inline-start: 0;
+        }
+        ul#socialList {
+            margin-top: 0;
         }
         #socialList > li, #supportList > li {
             display: inline;
         }
         ul#socialList > li > a > img {
-            width: 75px;
+            width: 50px;
         }
         #finePrint > p, #copyrightAddress > p {
             font-size: .8rem;
-            line-height: 1.5rem;
-            margin: 0;
+            line-height: 1rem;
+            margin: 10px;
         }
         #subFooter2 {
             border-top: 12px solid #DA1020;
@@ -96,6 +93,15 @@
         }
         ul#supportList > li > a:hover {
             text-decoration: none;
+        }
+        @media only screen and (min-width:360px) {
+            #appWrapper {
+                display:none;
+            }
+            ul#socialList > li > a > img {
+            width: 65px;
+        }
+            
         }
         </style>
     </head>
