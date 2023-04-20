@@ -18,7 +18,7 @@
             margin: 0 !important;
         }
         #websiteLinks > ul > li {
-            border-bottom: 1px solid #FAFAFA;
+            border-bottom: 1px solid #cccccc;
         }
         .footer-links {
             color: #ffffff;
@@ -37,8 +37,6 @@
         }
         h2 {
             font-size: 20px;
-            margin-bottom: 0;
-            margin-top: 20px;
         }
         @media only screen and (min-width:360px) {
             #appWrapper {
@@ -62,24 +60,15 @@
         #subFooter1 {
             padding-bottom: 20px;
         }
-        /*  #socialLinks {
-            display: flex;
-            justify-content: center;
-        }
-        #socialLinks > div {
-            margin: 1px;
-        }
-        #socialLinks > div > a > img {
-            width: 75px;
-        }*/
         #socialLinkWrapper, #subFooter1 {
             background-color:#ffffff;
             color: #000000;
         }
-        ul#sociaList, ul#supportList {
+        ul#socialList, ul#supportList {
             text-align: center;
             list-style: none;
             padding-left: 0;
+            padding-inline-start: 0;
         }
         #socialList > li, #supportList > li {
             display: inline;
@@ -88,9 +77,9 @@
             width: 75px;
         }
         #finePrint > p, #copyrightAddress > p {
-            font-size: 12px;
-            clear: both;
-            margin-bottom: -10px;
+            font-size: .8rem;
+            line-height: 1.5rem;
+            margin: 0;
         }
         #subFooter2 {
             border-top: 12px solid #DA1020;
@@ -104,10 +93,9 @@
         }
         ul#supportList > li > a {
             color: #ffffff;
-            text-decoration: none;
         }
         ul#supportList > li > a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
         </style>
     </head>
@@ -150,33 +138,6 @@
             </div>
             <div id="subFooter1">
                 <div id="socialLinkWrapper">
-                    <!--<div id="socialLinks" role="list">
-                        <div role="listitem">
-                            <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title="">
-                                <img alt="Facebook" data-assetid="633515" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/7380eeea-52c2-47a9-b740-18559794d66e.png">
-                            </a>
-                        </div>
-                        <div role="listitem">
-                            <a alias="" conversion="false" data-linkto="https://" href="https://www.instagram.com/xcelenergy/" title="">
-                                <img alt="Instagram" data-assetid="633514" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/e8798a45-9336-4ac8-8e1f-9c2648b39c00.png">
-                            </a>
-                        </div>
-                        <div role="listitem">
-                            <a alias="" conversion="false" data-linkto="https://" href="https://twitter.com/xcelenergy" title="">
-                                <img alt="Twitter" data-assetid="633512" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/6c7256b0-1cf5-4f4c-816f-ccf1b65cd5b9.png">
-                            </a>
-                        </div> 
-                        <div role="listitem">
-                            <a alias="" conversion="false" data-linkto="https://" href="https://stories.xcelenergy.com/" title="">
-                                <img alt="Between the Lines Blog" data-assetid="636275" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/10fac211-c5cd-4236-b58e-0515559209f3.png">
-                            </a>
-                        </div>
-                        <div role="listitem">
-                            <a alias="" conversion="false" data-linkto="https://" href="https://www.youtube.com/@XcelEnergyInYourCommunity" title="">
-                                <img alt="Youtube" data-assetid="633513" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f5cc5cf1-7c69-407b-a960-9ac2dbba2bcf.png"> 
-                            </a>
-                        </div>
-                    </div>    -->     
                     <ul id="socialList">
                         <li>
                             <a alias="" conversion="false" data-linkto="https://" href="https://www.facebook.com/xcelenergy" title=""><img alt="Facebook" data-assetid="633515" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/7380eeea-52c2-47a9-b740-18559794d66e.png"></a>
@@ -196,7 +157,6 @@
                             </a>
                         </li>
                     </ul>         
-
                 </div>
                 <div id="finePrint">
                     <p>You are receiving this email because you opted to receive information from Xcel Energy.</p>
