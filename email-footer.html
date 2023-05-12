@@ -12,14 +12,6 @@
             color: #ffffff;
             margin: 0;
         }
-        #websiteLinks > ul {
-            padding: 0;
-            list-style-type: none;
-            margin: 0 !important;
-        }
-        #websiteLinks > ul > li {
-            border-bottom: 1px solid #cccccc;
-        }
         .footer-links {
             color: #ffffff;
             font-size: 18px;
@@ -35,6 +27,16 @@
             text-decoration: underline;
             outline:Highlight auto 2px;outline:-webkit-focus-ring-color auto 5px;
         }
+        /* website links */
+        #websiteLinks > ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0 !important;
+        }
+        #websiteLinks > ul > li {
+            border-bottom: 1px solid #cccccc;
+        }
+        /* app downloads */
         h2 {
             font-size: 20px;
         }
@@ -44,6 +46,7 @@
         #apple {
             flex: 1;
             text-align: right;
+            padding-right: 10px;
         }
         #google {
             flex: 1;
@@ -51,7 +54,9 @@
         }
         #apple > a > img, #google > a > img {
             max-width: 100%;
+            width: 125px;
         }
+        /* subfooter with socials and fine print */
         #subFooter1 {
             padding-bottom: 20px;
         }
@@ -78,6 +83,7 @@
             line-height: 1rem;
             margin: 10px;
         }
+        /* button section with website links and copyright */
         #subFooter2 {
             border-top: 12px solid #DA1020;
             padding-bottom: 30px;
@@ -94,14 +100,14 @@
         ul#supportList > li > a:hover {
             text-decoration: none;
         }
+        /* responsive: only display socials on mobile */
         @media only screen and (min-width:415px) {
             #appWrapper {
                 display:none;
             }
             ul#socialList > li > a > img {
             width: 65px;
-        }
-            
+            }
         }
         </style>
     </head>
@@ -132,12 +138,12 @@
                 <div id="appImgWrapper">
                     <div id="apple">
                         <a href="https://apps.apple.com/us/app/my-xcel-energy/id1551712841" title="" alias="" conversion="false" data-linkto="https://">
-                            <img data-assetid="633488" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/f46ad397-a25f-44ab-bbd2-0b43a7b265de.png" alt="Download the app on App Store">
+                            <img data-assetid="633488" src="http://image.xcelenergy-emailnews.com/lib/fe6d15707565067a7711/m/5/27c721f7-888b-4956-8a0d-46add1c5f24d.png" alt="Download the app on App Store">
                         </a>
                     </div>
                     <div id="google">
                         <a href="https://play.google.com/store/apps/details?id=com.mysalesforce.mycommunity.C00D1U0000011ttVUAQ.A0OT2R000000GoeAWAS" title="" alias="" conversion="false" data-linkto="https://">
-                            <img data-assetid="633489" src="http://image.XcelEnergy-EmailNews.com/lib/fe6d15707565067a7711/m/5/4c594f12-315f-4622-8e19-8d92aface3cf.png" alt="Download the app on Google Play" >
+                            <img data-assetid="633489" src="http://image.xcelenergy-emailnews.com/lib/fe6d15707565067a7711/m/5/1d635b2f-8f52-4d51-8d28-5841886580a1.png" alt="Download the app on Google Play" >
                         </a>
                     </div>
                 </div>
